@@ -1,0 +1,5 @@
+SELECT P.Name as "Имя продукта", C.Name as "Имя Категории"
+FROM Categories C RIGHT JOIN Products_Categories PC
+ON C.Id = PC.CategoryId
+RIGHT JOIN Products P
+On PC.ProductId = P.Id
